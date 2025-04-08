@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -142,7 +141,7 @@ namespace projeto2
             Match match = regex.Match(_email);
 
             //Percorre as tabelas do banco de dados
-            foreach (DataRow row in _Login_sdf_cj3021947DataSet.Acessos)
+            foreach (DataRow row in _Login_sdf_cj3021947DataSet.Acessos) 
             {
                 //E procura por nomes de usuários existentes
                 if (row.ItemArray[1].Equals(_nomeUsuario))
@@ -232,10 +231,6 @@ String.IsNullOrWhiteSpace(smtpAddress) || smtpPorta <= 0)
         {
 
         }
-
-        private void btnRgistrar_Click(object sender, EventArgs e)
-        {
-            AdicionarUsuario(txtUsuario.Text, txtSenha.Text, txtConfirmarSenha.Text, txtEmail.Text);
-        }
     }
 }
+
