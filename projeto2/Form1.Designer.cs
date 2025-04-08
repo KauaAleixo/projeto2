@@ -50,14 +50,7 @@
             this.txtUsuarioLogin = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Registro = new System.Windows.Forms.TabPage();
-            this.txtEmail = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.txtConfirmarSenha = new System.Windows.Forms.Label();
-            this.txtSenha = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btnRgistrar = new System.Windows.Forms.Button();
             this.Tabela = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,7 +70,14 @@
             this.label9 = new System.Windows.Forms.Label();
             this.acessosTableAdapter = new projeto2._Login_sdf_cj3021947DataSetTableAdapters.AcessosTableAdapter();
             this.tableAdapterManager = new projeto2._Login_sdf_cj3021947DataSetTableAdapters.TableAdapterManager();
-            this.btnRgistrar = new System.Windows.Forms.Button();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -266,13 +266,13 @@
             // 
             // Registro
             // 
-            this.Registro.Controls.Add(this.btnRgistrar);
             this.Registro.Controls.Add(this.txtEmail);
-            this.Registro.Controls.Add(this.textBox5);
-            this.Registro.Controls.Add(this.textBox6);
             this.Registro.Controls.Add(this.txtConfirmarSenha);
             this.Registro.Controls.Add(this.txtSenha);
-            this.Registro.Controls.Add(this.textBox3);
+            this.Registro.Controls.Add(this.label6);
+            this.Registro.Controls.Add(this.label5);
+            this.Registro.Controls.Add(this.label3);
+            this.Registro.Controls.Add(this.btnRgistrar);
             this.Registro.Controls.Add(this.txtUsuario);
             this.Registro.Controls.Add(this.label4);
             this.Registro.Location = new System.Drawing.Point(4, 22);
@@ -283,69 +283,15 @@
             this.Registro.Text = "Registro";
             this.Registro.UseVisualStyleBackColor = true;
             // 
-            // txtEmail
+            // btnRgistrar
             // 
-            this.txtEmail.AutoSize = true;
-            this.txtEmail.Location = new System.Drawing.Point(137, 252);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(32, 13);
-            this.txtEmail.TabIndex = 11;
-            this.txtEmail.Text = "Email";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(212, 252);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 10;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(212, 156);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 9;
-            // 
-            // txtConfirmarSenha
-            // 
-            this.txtConfirmarSenha.AutoSize = true;
-            this.txtConfirmarSenha.Location = new System.Drawing.Point(131, 207);
-            this.txtConfirmarSenha.Name = "txtConfirmarSenha";
-            this.txtConfirmarSenha.Size = new System.Drawing.Size(51, 13);
-            this.txtConfirmarSenha.TabIndex = 8;
-            this.txtConfirmarSenha.Text = "Confirmar";
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.AutoSize = true;
-            this.txtSenha.Location = new System.Drawing.Point(131, 159);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(38, 13);
-            this.txtSenha.TabIndex = 7;
-            this.txtSenha.Text = "Senha";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(212, 207);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(212, 111);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
-            this.txtUsuario.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(130, 111);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Usuário";
+            this.btnRgistrar.Location = new System.Drawing.Point(232, 309);
+            this.btnRgistrar.Name = "btnRgistrar";
+            this.btnRgistrar.Size = new System.Drawing.Size(75, 23);
+            this.btnRgistrar.TabIndex = 12;
+            this.btnRgistrar.Text = "Registrar";
+            this.btnRgistrar.UseVisualStyleBackColor = true;
+            this.btnRgistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // Tabela
             // 
@@ -499,15 +445,69 @@
             this.tableAdapterManager.UpdateOrder = projeto2._Login_sdf_cj3021947DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsuariosTableAdapter = null;
             // 
-            // btnRgistrar
+            // txtUsuario
             // 
-            this.btnRgistrar.Location = new System.Drawing.Point(232, 309);
-            this.btnRgistrar.Name = "btnRgistrar";
-            this.btnRgistrar.Size = new System.Drawing.Size(75, 23);
-            this.btnRgistrar.TabIndex = 12;
-            this.btnRgistrar.Text = "Registrar";
-            this.btnRgistrar.UseVisualStyleBackColor = true;
-            this.btnRgistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            this.txtUsuario.Location = new System.Drawing.Point(212, 111);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuario.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(130, 111);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Usuário";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(133, 167);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Senha";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(133, 213);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Confirmar";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(139, 257);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Email";
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(212, 167);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(100, 20);
+            this.txtSenha.TabIndex = 16;
+            // 
+            // txtConfirmarSenha
+            // 
+            this.txtConfirmarSenha.Location = new System.Drawing.Point(212, 213);
+            this.txtConfirmarSenha.Name = "txtConfirmarSenha";
+            this.txtConfirmarSenha.Size = new System.Drawing.Size(100, 20);
+            this.txtConfirmarSenha.TabIndex = 17;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(212, 257);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 18;
             // 
             // Form1
             // 
@@ -564,14 +564,6 @@
         private System.Windows.Forms.TabPage Registro;
         private System.Windows.Forms.TabPage Tabela;
         private System.Windows.Forms.TabPage Configuração;
-        private System.Windows.Forms.Label txtEmail;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label txtConfirmarSenha;
-        private System.Windows.Forms.Label txtSenha;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private _Login_sdf_cj3021947DataSet _Login_sdf_cj3021947DataSet;
         private System.Windows.Forms.BindingSource acessosBindingSource;
@@ -590,6 +582,14 @@
         private System.Windows.Forms.TextBox txtEnderecoSMTP;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnRgistrar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtConfirmarSenha;
+        private System.Windows.Forms.TextBox txtSenha;
     }
 }
 
